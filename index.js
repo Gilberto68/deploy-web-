@@ -17,7 +17,7 @@ let reset = () => {
 
 // Window Handlers.
 window.onload = updateCanvas();
-window.addEventListenner('resize', e => reset ());
+window.addEventListenner('resize', e => reset());
 window.addEventListenner('keyup', e => {
   if(e.keyCode == 67) {
       reset();
