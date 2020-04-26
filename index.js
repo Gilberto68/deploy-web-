@@ -206,5 +206,5 @@ let predict = (r) => {
 };
 
 // Start...
-createrGrid();
+createGrid();
 loadNeuralNet();
