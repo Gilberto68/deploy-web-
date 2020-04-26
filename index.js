@@ -17,8 +17,8 @@ let reset = () => {
 
 // Window Handlers.
 window.onload = updateCanvas();
-window.addEventListenner('resize', e => reset());
-window.addEventListenner('keyup', e => {
+window.addEventListener('resize', e => reset());
+window.addEventListener('keyup', e => {
   if(e.keyCode == 67) {
       reset();
     }
@@ -87,7 +87,7 @@ let inBounds = (x,y, target) => {
   (y > target[2]&& y < target[3]);
 }
 
-window.addEventListenner('mousedown', e => {
+window.addEventListener('mousedown', e => {
   mouseX = e.clientX;
   mouseY = e.clientY;
 
@@ -98,7 +98,7 @@ window.addEventListenner('mousedown', e => {
 
 // GRID EVENT HANDLERS //
 
-window.addEventListenner('mousemove', e => {
+window.addEventListener('mousemove', e => {
   mouseX = e.clientX;
   mouseY = e.clientY;
 
@@ -117,7 +117,7 @@ window.addEventListenner('mousemove', e => {
   }
 });
 
-window.addEventListenner('mouseup', e => {
+window.addEventListener('mouseup', e => {
   mouseX = e.clientX;
   mouseY = e.clientY;
 
