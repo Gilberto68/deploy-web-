@@ -124,7 +124,7 @@ window.addEventListener('mouseup', e => {
     if (isWriting) {
       raw_matrix = parseGrid();
       // Predict with CNN.
-      let softmax = predict(raw.matrix).dataSync();
+      let softmax = predict(raw_matrix).dataSync();
       let preds = Array.from(softmax).map(n => parseFloat(n.toPrecision(4)));
       console.log(preds);
 
