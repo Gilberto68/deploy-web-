@@ -60,7 +60,7 @@ class Pixel {
 let pixelDim = null;
 let anchorX = null;
 let anchorY = null;
-let gridBounding = null:
+let gridBounding = null;
 
 let createGrid = () => {
 
